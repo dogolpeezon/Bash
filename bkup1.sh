@@ -10,7 +10,7 @@ user=$(whoami)
 ls -d /home/$user/*/ >> log.txt
 
 cat log.txt
-#sed 's/^.\{,11\}//' log.txt
+#sed 's/^.\{,11\}//' log.txt  // 2 different ways to read from log.txt.. exclude the /home/user/
 #awk '{print substr($0,11)}' log.txt
 
 echo -n -e "\e[93mfolder to back up.\e[0m" /home/$user/
